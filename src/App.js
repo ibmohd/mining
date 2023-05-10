@@ -14,13 +14,13 @@ function App() {
    <LayoutComponent>
     <Routes>
       <Route path='/' element={<Homepage/>}/>
-      <Route path='contact' element={<ContactPage/>}/>
-      <Route path='about-us' element={<AboutUsPage/>}/>
-      <Route path='services'>
+      <Route exact path='/contact' element={<ContactPage/>}/>
+      <Route exact path='/about-us' element={<AboutUsPage/>}/>
+      <Route exact path='/services'>
         <Route index element={<ServicesPage/>}/>
         <Route path=':slug' element={<SingleServicePage/>}/>
       </Route>
-      <Route path='products'>
+      <Route path='/products'>
         <Route index element={<ProductCategoriesPage/>}/>
         <Route path=':category' element={<ProductsPage/>}/>
         <Route path=':category/:slug' element={<SingleProductPage/>}/>

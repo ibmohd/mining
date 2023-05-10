@@ -7,7 +7,7 @@ import { BurgerSidebar } from './BurgerSidebar';
 export const Header = () => {
 
   //   PULL OUT TO ENV?
-  const domain = 'http://localhost:3000'
+  const domain = 'https://ibmohd.github.io/mining'
 
   function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState(null);
