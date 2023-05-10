@@ -14,9 +14,9 @@ function App() {
    <LayoutComponent>
     <Routes>
       <Route path='/' element={<Homepage/>}/>
-      <Route exact path='/contact' element={<ContactPage/>}/>
-      <Route exact path='/about-us' element={<AboutUsPage/>}/>
-      <Route exact path='/services'>
+      <Route path='/contact' element={<ContactPage/>}/>
+      <Route path='/about-us' element={<AboutUsPage/>}/>
+      <Route path='/services'>
         <Route index element={<ServicesPage/>}/>
         <Route path=':slug' element={<SingleServicePage/>}/>
       </Route>
