@@ -6,7 +6,7 @@ import {LazyLoadImage} from 'react-lazy-load-image-component'
 
 export const Section = ({item,category,name,type}) => {
 
-  const domain = "https://ibmohd.github.io/mining"
+  const domain = 'https://ibmohd.github.io/mining/#'
   const categorySlug  = slugify(category)
   const url = name ? `${domain}/${type}/${categorySlug}/${slugify(name)}` : `${domain}/${type}/${categorySlug}`
 

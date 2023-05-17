@@ -7,7 +7,7 @@ import {images} from '../datafile'
 
 export const Homepage = () => {
 
-  const domain = 'https://ibmohd.github.io/mining'
+  const domain = 'https://ibmohd.github.io/mining/#'
 
   return (
     <div className='w-full flex flex-col items-center justify-center overflow-y-scroll'>
@@ -31,7 +31,7 @@ export const Homepage = () => {
                 <h3 className='text-white text-4xl lg:text-5xl text-center font-medium  font-title-font opacity-100'>
                   {"UPON INTEGRITY & HONESTY"}
                 </h3>
-                <a href={`about-us`} className='transition duration-150 bg-glass button font-main-font flex items-center justify-center w-64 h-16 border-4 mt-10 rounded-full text-white hover:text-primary hover:border-primary hover:bg-accent-primary cursor-pointer z-10'>
+                <a href={`${domain}/about-us`} className='transition duration-150 bg-glass button font-main-font flex items-center justify-center w-64 h-16 border-4 mt-10 rounded-full text-white hover:text-primary hover:border-primary hover:bg-accent-primary cursor-pointer z-10'>
                   {"DISCOVER MORE"}
                 </a>
               </div>

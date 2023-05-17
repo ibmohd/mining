@@ -13,7 +13,7 @@ function App() {
   return (
    <LayoutComponent>
     <Routes>
-      <Route path='/' element={<Homepage/>}/>
+      <Route exact path='/' element={<Homepage/>}/>
       <Route path='/contact' element={<ContactPage/>}/>
       <Route path='/about-us' element={<AboutUsPage/>}/>
       <Route path='/services'>

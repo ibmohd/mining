@@ -2,7 +2,7 @@ import React from 'react'
 import {GrStatusGood} from 'react-icons/gr'
 
 export const OfferTab = ({item}) => {
-  console.log(item)
+
   return (
     <div className='w-full min-h-[100vh] flex flex-col items-center'>
         <h2 className='text-3xl my-5 underline underline-offset-4 decoration-accent-primary'>Our Services To You</h2>

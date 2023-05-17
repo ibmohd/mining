@@ -1,6 +1,9 @@
 import React from 'react'
 
 export const BurgerSidebar = ({open,setOpen}) => {
+
+    const domain = 'https://ibmohd.github.io/mining/#'
+
   return (
    <>
      <div className={`fixed top-0 left-0 h-full w-full md:w-[50vw] z-50 flex-col bg-secondary ${open ? `translate-x-0`:`-translate-x-full`} ease-in-out duration-300`}>
@@ -19,11 +22,11 @@ export const BurgerSidebar = ({open,setOpen}) => {
 
             <div className='flex-col w-full h-full'>
             {[
-                {title:'Home',url: '/'},
-                {title:'About Us',url: 'about-us'},
-                {title:'Products',url: 'products'},
-                {title:'Services',url: 'services'},
-                {title:'Contact',url: 'contact'},
+                {title:'Home',url: `${domain}`},
+                {title:'About Us',url: `${domain}/about-us`},
+                {title:'Products',url: `${domain}/products`},
+                {title:'Services',url: `${domain}/services`},
+                {title:'Contact',url: `${domain}/contact`},
             ].map((item,i)=>{
                     return <div key={i}>
                         <a href={item.url} onClick={()=> setOpen(false)}>

@@ -4,7 +4,7 @@ import {MdDirectionsBoatFilled, MdPhoneEnabled,MdOutlineDocumentScanner} from 'r
 
 export const AboutUsPage = () => {
 
-  const domain = 'https://ibmohd.github.io'
+  const domain = 'https://ibmohd.github.io/mining/#'
   const rcnum = 2009255
   const companynum = '+234 809 686 2582'
   const exportnum = 1234567
